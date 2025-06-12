@@ -29,6 +29,7 @@ body {
 
 .cell:hover {
     background-color: #404040;
+    scale: 1.025;
 }
 
 .info {
@@ -66,4 +67,5 @@ body {
 
 #restart:hover {
     background-color: #404040;
+    scale: 1.025;
 }
