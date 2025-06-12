@@ -31,10 +31,39 @@ body {
     background-color: #404040;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 #message {
     text-align: center;
-    font-size: 18px;
+    font-size: 42px;
+    position: absolute;
+    top: 16rem;
+}
+
+#player-turn {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 #restart {
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#restart:hover {
+    background-color: #404040;
 }

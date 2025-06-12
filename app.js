@@ -1,8 +1,13 @@
 const cells = document.querySelectorAll(".cell");
 const message = document.getElementById("message");
-// console.log(message)
+const playerTurn = document.getElementById("player-turn");
+const restartButton = document.getElementById("restart")
 // console.log(cells)
+// console.log(message)
+// console.log(playerTurn)
+// console.log(restartButton)
 let turn = "X";
+playerTurn.textContent = `Turno del giocatore: ${turn}`;
 
 
 function checkVictory() {
@@ -36,6 +41,11 @@ cells.forEach(c => {
             message.textContent = "Pareggio!";
         } else {
             turn = turn === "X" ? "O" : "X";
+            playerTurn.textContent = `Turno del giocatore: ${turn}`;
         }
     });
 });
+
+restartButton.addEventListener("click", () => {
+    location.reload();
+})
